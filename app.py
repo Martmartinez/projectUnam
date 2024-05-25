@@ -4,7 +4,7 @@ import plotly_express as px
 
 car_data=pd.read_csv('vehicles_us.csv')
 
-st.header("Proyecto de despleigue de servidor web con render")
+st.header("Proyecto de despliegue de servidor web con render")
 hist_button=st.button('Construir Histograma')
 
 if hist_button:
