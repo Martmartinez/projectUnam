@@ -4,6 +4,7 @@ import plotly_express as px
 
 car_data=pd.read_csv('vehicles_us.csv')
 
+st.header("Proyecto de despleigue de servidor web con render")
 hist_button=st.button('Construir Histograma')
 
 if hist_button:
@@ -24,7 +25,7 @@ if dispersion_button:
     st.plotly_chart(fig,use_container_width=True)
 
 #Para el reto anexado a la actividad con el checkBox
-check_box=st.checkbox("Check para generar el gráfico 3D")
+check_box=st.checkbox("Check para generar el gráfico de dispersión")
 if check_box:
     st.write("Generar un gráfico de dispersión de los datos actuales")
      #Crear el gráfico de dispersión
